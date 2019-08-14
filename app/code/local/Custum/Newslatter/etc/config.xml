@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Custum_Newslatter>
+            <version>0.1.0</version>
+        </Custum_Newslatter>
+    </modules>
+
+
+    <frontend>
+	 <routers>
+	 <newsletter>
+	   <args>
+	    <modules>
+	      <Custum_Newslatter before="Mage_Newsletter">Custum_Newslatter</Custum_Newslatter>
+	    </modules>
+	   </args>
+	   </newsletter>
+	 </routers>
+         <layout>
+            <updates>
+                <newslatter>
+                    <file>Custum_Newslatter.xml</file>
+                </newslatter>
+            </updates>
+        </layout>
+	</frontend>
+    <global>
+        <resources>
+            <newslatter_setup>
+                <setup>
+                    <module>Custum_Newslatter</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </newslatter_setup>
+            <newslatter_setup>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </newslatter_setup>
+            <newslatter_setup>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </newslatter_setup>
+        </resources>
+        <blocks>
+            <newsletter>
+                  <rewrite>
+                      <subscribe>Custum_Newslatter_Block_Newslatter</subscribe>
+                    </rewrite>
+            </newsletter>
+        </blocks>
+	
+        <helpers>
+            <newslatter>
+                <class>Custum_Newslatter_Helper</class>
+            </newslatter>
+        </helpers>
+    </global>
+</config>

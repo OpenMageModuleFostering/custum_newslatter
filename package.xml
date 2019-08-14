@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+    <name>Custum_Newslatter</name>
+    <version>1.0.3</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Custom Newsletter Extension - Add new custom field in magento default newsletter form.</summary>
+    <description>This extension you can add new custom newsletter field in newsletter form, &#xD;
+&#xD;
+(1) many times you need to add new field in newsletter form after downloading this you will show new field in newsletter form. &#xD;
+&#xD;
+(2) download it is very easy . then you can design newsletter form as per your needs. &#xD;
+&#xD;
+(3) you can call this block in any page where you want to show up the newsletter by this you need to put this block {{block type="newsletter/subscribe" name="left.newsletter" template="newsletter/subscribe.phtml"}} &#xD;
+&#xD;
+Features &#xD;
+&#xD;
+(1) Easy to install and use&#xD;
+&#xD;
+(2) 100% Free&#xD;
+&#xD;
+(3) 100% Open Source</description>
+    <notes>Custum_Newslatter 1.0.3 stable version</notes>
+    <authors><author><name>kushagra daharwal</name><user>kushagra</user><email>kushagra.daharwal@hotmail.com</email></author></authors>
+    <date>2014-02-20</date>
+    <time>06:43:37</time>
+    <contents><target name="magelocal"><dir name="Custum"><dir name="Newslatter"><dir name="Block"><file name="Newslatter.php" hash="5e918dcd6d7a594f2361df975218739d"/></dir><dir name="Helper"><file name="Data.php" hash="1a31eb214a6ec9390b29708750bfff4e"/></dir><dir name="controllers"><file name="SubscriberController.php" hash="75981332cbb670c864fc3709a5e6c896"/></dir><dir name="etc"><file name="config.xml" hash="85df473965e2532d5bb33f8fe5e2a062"/></dir><dir name="sql"><dir name="newslatter_setup"><file name="mysql4-install-0.1.0.php" hash="29443ef39be57dbc754ab061fde84c8e"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Custum_Newslatter.xml" hash="3290435078ae9cc4428071bc4ea8cb4d"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="custum_newslatter.xml" hash="600139a6b3ea0984b6874ad14710aedb"/></dir><dir name="template"><dir name="newsletter"><file name="subscribe.phtml" hash="73099ee78c58d677558f95e466972374"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="css"><dir name="custum"><file name="newslatter.css" hash="36541d10392bf7b6fd7d4c37ed6e6467"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>5.6.0</max></php><package><name>custum_newslatter</name><channel>community</channel><min>1.0.0</min><max>2.0.0</max></package><extension><name>gd</name><min>2.3.0</min><max>2.4</max></extension></required></dependencies>
+</package>

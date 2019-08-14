@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Custum_Newslatter>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Custum_Newslatter>
+    </modules>
+</config> 
