@@ -30,6 +30,7 @@
     <div class="block-title">
         <strong><span><?php echo $this->__('Newsletter') ?></span></strong>
     </div>
+    <?php $getdefaultfname = Mage::helper("newslatter")->getCustumerfirstname();  //get default customer first name?>
     <form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="newsletter-validate-detail">
             <div class="form-subscribe-header">
                 <label for="newsletter"><?php echo $this->__('Sign Up for Our Newsletter:') ?></label>
@@ -40,7 +41,7 @@
         
         
 			  <label>Name</label>
-               <input type="text" name="lastname" id="lastname" title="<?php echo $this->__('Sign up for our newsletter') ?>" />
+               <input type="text" name="lastname"  <?php if($getdefaultfname){?>value="<?php echo $getdefaultfname;?>"<?php }?> id="lastname" title="<?php echo $this->__('Name') ?>" />
           
                
 
