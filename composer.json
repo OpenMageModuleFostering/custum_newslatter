@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Custum_Newslatter",
+    "name": "openmage-module-fostering\/custum_newslatter",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Custom Newsletter Extension - Add new custom field in magento default newsletter form.",
     "authors": [

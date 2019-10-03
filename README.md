@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Custom Newsletter Extension - Add new custom field in magento default newsletter form.
